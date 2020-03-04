@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div class="container">
+    <h2>Database Results from collection Users</h2>
+    <table>
+        <tr>
+            <th>User Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+
+<!--        iterate through all user records to display user id, first name, last name-->
+        <% results.forEach(function(r) { %>
+        <tr>
+            <td><%= r.User_id %></td>
+            <td><%= r.First_name %></td>
+            <td><%= r.Last_name%></td>
+        </tr>
+        <% });%>
+
+    </table>
+</div>
+</body>
+</html>
