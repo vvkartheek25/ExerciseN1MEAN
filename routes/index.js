@@ -14,7 +14,7 @@ router.get('/db', function (request, response, next) {
   mongodb.MongoClient.connect(DATABASE_URL,  function(err, client) {
     if(err) throw err;
     //get handle to the database
-    var db = client.db('heroku_vd9bt3bv');
+    var db = client.db('heroku_92gxml7b');
     //get collection of Users
     var Users = db.collection('Users');
     //get all Users
@@ -36,7 +36,7 @@ router.get('/mongodb', function (request, response, next) {
   mongodb.MongoClient.connect(DATABASE_URL,  function(err, client) {
     if(err) throw err;
     //get handle to the database
-    var db = client.db('heroku_vd9bt3bv');
+    var db = client.db('heroku_92gxml7b');
     //get collection of Routes
     var Routes = db.collection('Routes');
     //get all Routes with frequency >=1
